@@ -1,7 +1,7 @@
 import java.util.*;
 public class Product {
-    public String name;
-    public double price;
+    public String name = "  " ;
+    public double price = 0;
     public int stock = 0;
     Scanner scan = new Scanner(System.in);
 
@@ -14,12 +14,12 @@ public class Product {
         this.name = name;
         this.price = price;
     }
-    public String getName()
+    public String getName(){
         return name;
     }
     public void setName(){
         System.out.println("Enter name: ");
-        String name = scan.nextLine();
+        name = scan.nextLine();
     }
     public double getPrice(){
 
@@ -27,7 +27,7 @@ public class Product {
     }
     public void setPrice(){
         System.out.println("Enter price: ");
-        double price = scan.nextDouble();
+        price = scan.nextDouble();
     }
     public int getStock(){
 
@@ -35,7 +35,7 @@ public class Product {
     }
     public void setStock(){
         System.out.println("Enter stock: ");
-        int stock = scan.nextInt();
+        stock = scan.nextInt();
     }
     public void addStock(int amount){
         System.out.println("Add: ");
@@ -50,5 +50,4 @@ public class Product {
         if (amount>0 && amount <= stock){
             stock=stock-amount;
         }
-    }
 }
