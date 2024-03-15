@@ -35,7 +35,7 @@ public class Employee {
         TestAccount.type = lolxd;
         boolean isUnique = true;
 
-        System.out.println("What will be your account");
+        System.out.println("What will be your account"); //jiji
         aux = scan.nextInt(); //532574\n
         scan.nextLine(); //\n
 
